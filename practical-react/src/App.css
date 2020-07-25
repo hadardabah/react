@@ -6,12 +6,33 @@
 
 .App header {
 	background-color: lightblue;
-}
-
-.App main {
-	background-color: lightsalmon;
+	padding: 15px;
 }
 
 .App footer {
 	background-color: lavender;
+	padding: 15px;
+}
+
+.App main {
+	background-color: lightsalmon;
+	padding: 15px;
+}
+
+.gallery {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.Card {
+	border-radius: 10px;
+	background-color: azure;
+	overflow: hidden;
+	height: fit-content;
+}
+
+.card-img-top {
+	width: 100%;
+	height: auto;
 }
