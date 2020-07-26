@@ -17,6 +17,7 @@
 .App main {
 	background-color: lightsalmon;
 	padding: 15px;
+	overflow-y: scroll;
 }
 
 .gallery {
