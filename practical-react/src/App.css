@@ -4,9 +4,14 @@
 	grid-template-rows: auto 1fr auto;
 }
 
-.App header {
-	background-color: lightblue;
-	padding: 15px;
+.header{
+	background-color: #F6C6CE;
+	height: 50px;
+	border-radius: 5px;
+	width: 99%;
+	margin: 5px;
+	padding-left: 20px;
+	color:#7f7f7f;
 }
 
 .App footer {
@@ -14,26 +19,14 @@
 	padding: 15px;
 }
 
-.App main {
-	background-color: lightsalmon;
-	padding: 15px;
-	overflow-y: scroll;
-}
+/*.App main {*/
+/*	background-color: lightsalmon;*/
+/*	padding: 15px;*/
+/*	overflow-y: scroll;*/
+/*}*/
 
 .gallery {
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-}
-
-.Card {
-	border-radius: 10px;
-	background-color: azure;
-	overflow: hidden;
-	height: fit-content;
-}
-
-.card-img-top {
-	width: 100%;
-	height: auto;
 }
