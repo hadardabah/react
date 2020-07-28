@@ -1,0 +1,24 @@
+.paint {
+  border-radius: 5px;
+  background-color: #006666;
+  height: 100%;
+  width: 99%;
+  margin: 10px;
+  display: flex;
+}
+
+.middle-card{
+  padding-left: 20px;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+.text-color {
+  color: #dddddd;
+}
+.img {
+  padding-left: 20px;
+  width: 500px;
+    height: 600px;
+}
