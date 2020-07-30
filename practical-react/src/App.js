@@ -30,7 +30,7 @@ class App extends React.Component {
     render() {
         // console.log( "renderr => "+this.state.paintings)
         return (
-            <div className="app">
+            <div className="App">
                 <Header/>
                 <Paintings data={this.state.paintings}/>
                 <Footer/>

@@ -20,9 +20,7 @@ class Paintings extends React.Component {
 
     render() {
         return (
-            <div>
-                {this.state.flag === true ? <PaintingExtraDetails data={this.state.extra_details_paint}/> : this.List()}
-            </div>
+          this.state.flag === true ? <PaintingExtraDetails data={this.state.extra_details_paint}/> : this.List()
         );
     }
 
