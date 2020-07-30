@@ -1,30 +1,23 @@
 .paint {
   border-radius: 5px;
-  background-color: #006666;
-  height: 100%;
-  width: 99%;
-  margin: 10px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  color: darkslategray;
+//   padding: 1rem;
 }
 
 .middle-card{
-  padding-left: 30px;
-  width: 30%;
+	// height: 100%;
+
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   display: flex;
 }
-.btn-size{
-  width: 50%;
-}
-.text-color {
-  color: #dddddd;
-}
+
 .img {
-  margin: 15px;
-  padding-left: 55px;
-  width: 500px;
-  height: 600px;
+  width: 100%;
+  height: auto;
 }
 //@media screen and (max-width: 10px) {
 //  .middle-card{
