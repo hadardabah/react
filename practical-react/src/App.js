@@ -41,7 +41,7 @@ class App extends React.Component {
 
 function Header() {
     return (
-        <header className="header"><h2>List Of Paintings</h2></header>
+        <header><h1>Paintings</h1></header>
     );
 }
 

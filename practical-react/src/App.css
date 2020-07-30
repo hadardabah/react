@@ -1,22 +1,16 @@
 .App {
 	display: grid;
-	height: 100vh;
 	grid-template-rows: auto 1fr auto;
 }
 
-.header{
-	background-color: #F6C6CE;
-	height: 50px;
-	border-radius: 5px;
-	width: 99%;
-	margin: 5px;
-	padding-left: 20px;
-	color:#7f7f7f;
+header{
+	margin-bottom: 1rem;
+	color:darkslategray;
 }
 
-.App footer {
-	background-color: lavender;
-	padding: 15px;
+footer {
+	margin-top: 1rem;
+	color:darkslategray;
 }
 
 /*.App main {*/
@@ -24,9 +18,3 @@
 /*	padding: 15px;*/
 /*	overflow-y: scroll;*/
 /*}*/
-
-.gallery {
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-}
