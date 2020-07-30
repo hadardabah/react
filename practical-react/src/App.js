@@ -2,10 +2,16 @@ import React from 'react';
 import './App.css';
 import {db} from './service/firebase'
 import Paintings from "./paintings/Paintings.js";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+import PaintingExtraDetails from "./painting-extra-details/Painting-extra-details";
 
 class App extends React.Component {
     state = {
-        paintings:null
+        paintings: null
     };
 
     componentDidMount() {
@@ -22,27 +28,30 @@ class App extends React.Component {
                 this.setState({paintings: paintingsList});
                 console.log(this.state.paintings);
                 // window.location.reload();
-                // this.render();
-                // console.log(paintings);
             }).catch(err => console.log("error => " + err))
     }
 
     render() {
-        // console.log( "renderr => "+this.state.paintings)
         return (
-            <div className="app">
-                <Header/>
-                <Paintings data={this.state.paintings}/>
-                <Footer/>
+            <div>
+                {/*<div>*/}
+                {/*    <Router>*/}
+                {/*        <div>*/}
+                {/*            <Switch>*/}
+                {/*                <Route path="/" exact component={Paintings} data={this.state.paintings}/>*/}
+                {/*                <Route path='/PaintDetail/:name' component={PaintingExtraDetails}/>*/}
+                {/*            </Switch>*/}
+                {/*        </div>*/}
+                {/*    </Router>*/}
+                {/*</div>*/}
+                <div className="app">
+                    <Paintings data={this.state.paintings}/>
+                    <Footer/>
+                </div>
             </div>
+
         )
     }
-}
-
-function Header() {
-    return (
-        <header className="header"><h2>List Of Paintings</h2></header>
-    );
 }
 
 function Footer() {

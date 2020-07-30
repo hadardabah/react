@@ -5,11 +5,15 @@ import PaintingExtraDetails from "../painting-extra-details/Painting-extra-detai
 import {string} from "prop-types";
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownButton from 'react-bootstrap/DropdownButton'
+import {Button} from 'react-bootstrap'
+import {BrowserRouter as Router, Link} from "react-router-dom";
 
 class Paintings extends React.Component {
 
     state = {
+        search: "",
         flag: false,
+        paintings_list:[],
         extra_details_paint: {
             artist: string,
             category: string,
@@ -20,12 +24,19 @@ class Paintings extends React.Component {
         }
     };
 
+    onChange = e => {
+        this.setState({search: e.target.value})
+    };
+
     render() {
         this.SearchByCategory();
         return (
             <div>
                 <div>
-                    <DropdownButton id="search-button" title="Search By Category">
+                    <header className="header"><h2>List Of Paintings</h2></header>
+                </div>
+                <div>
+                    <DropdownButton className="dropdown-button" id="search-button" title="Search By Category">
                         <Dropdown.Item href="#/action-1">Famous Paintings</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Animals</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Digital Art</Dropdown.Item>
@@ -42,9 +53,10 @@ class Paintings extends React.Component {
 
     List() {
         if (this.props.data) {
+            this.SearchByCategory(this.props.data);
             return (
                 this.props.data.map((paint, i) => (
-                        <div key = {i} style={{display: "inline-block"}}>
+                        <div key={i} style={{display: "inline-block"}}>
                             {this.Card(paint)}
                         </div>
                     )
@@ -55,15 +67,15 @@ class Paintings extends React.Component {
         }
     }
 
-    SearchByCategory() {
-        return (
-            <DropdownButton id="search-button" title="Search By Category">
-                <Dropdown.Item href="#/action-1">Famous Paintings</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Animals</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Digital Art</Dropdown.Item>
-                <Dropdown.Item href="#/action-4">Landscape Paintings</Dropdown.Item>
-            </DropdownButton>
-        )
+    SearchByCategory(paints) {
+        // const {search} = this.state;
+        // const filterPaint = paints.filter();
+        // if(search !== "" &&){
+        //     return null
+        // }
+        // return (
+        //
+        // )
     }
 
     Card(paint) {
@@ -81,11 +93,19 @@ class Paintings extends React.Component {
                         <p className="text"><b>Description:</b> {sub_description}</p>
                         <br/>
                     </div>
+                    {/*<Router>*/}
+                    {/*    <Link to={`/PaintDetail/${paint}`}>*/}
+                            <Button className="btn btn-info"
+                                    onClick={() => this.setState({flag: true, extra_details_paint: paint})}
+                            >Extra Details
+                            </Button>
+                    {/*    </Link>*/}
+                    {/*</Router>*/}
 
-                    <button className="btn btn-info"
-                            onClick={() => this.setState({flag: true, extra_details_paint: paint})}
-                    >Extra Details
-                    </button>
+                    {/*<button className="btn btn-info"*/}
+                    {/*        onClick={() => this.setState({flag: true, extra_details_paint: paint})}*/}
+                    {/*>Extra Details*/}
+                    {/*</button>*/}
                 </div>
             </div>
         );

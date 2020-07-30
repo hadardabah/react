@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce2e612d-7c32-4ed7-8ad7-10e6bfe6c69f" name="Default Changelist" comment="add files">
+    <list default="true" id="ce2e612d-7c32-4ed7-8ad7-10e6bfe6c69f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/BrowserRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/BrowserRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/HashRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/HashRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Link.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/MemoryRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/MemoryRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/NavLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/NavLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Prompt.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Prompt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Redirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Route.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/StaticRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/StaticRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/Switch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/cjs/react-router-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/cjs/react-router-dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/cjs/react-router-dom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/cjs/react-router-dom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/BrowserRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/BrowserRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/HashRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/HashRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Link.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/MemoryRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/MemoryRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/NavLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/NavLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Prompt.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Prompt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Redirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Route.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/StaticRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/StaticRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/Switch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/generatePath.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/generatePath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/matchPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/matchPath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/warnAboutDeprecatedESMImport.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/warnAboutDeprecatedESMImport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/withRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/es/withRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/esm/react-router-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/esm/react-router-dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/generatePath.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/generatePath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/matchPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/matchPath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/BrowserRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/BrowserRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/HashRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/HashRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/Link.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/Link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/NavLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/NavLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/utils/locationUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/modules/utils/locationUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/umd/react-router-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/umd/react-router-dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/umd/react-router-dom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/umd/react-router-dom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/warnAboutDeprecatedCJSRequire.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/warnAboutDeprecatedCJSRequire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/withRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/node_modules/react-router-dom/withRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practical-react/src/paintings/Paintings.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/src/paintings/Paintings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practical-react/src/paintings/Paintings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/src/paintings/Paintings.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +71,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="search-by-category-v1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,7 +176,13 @@
       <option name="presentableId" value="LOCAL‎00006" />
       <updated>1595962910880</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL‎00007" summary="add key">
+      <created>1596106475219</created>
+      <option name="number" value="LOCAL‎00007" />
+      <option name="presentableId" value="LOCAL‎00007" />
+      <updated>1596106475219</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +196,9 @@
     <MESSAGE value="add Paintings - main component" />
     <MESSAGE value="create Painting-extra-details - secondary page" />
     <MESSAGE value="add files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files" />
+    <MESSAGE value="add key" />
+    <MESSAGE value="add router, search" />
+    <option name="LAST_COMMIT_MESSAGE" value="add router, search" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="1" key="#Inspections" timestamp="1595947340189">
@@ -152,30 +209,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1595962110079" />
-    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1596104615977">
+    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1596119186311">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1596104615977" />
+    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1596119186311" />
+    <state x="122" y="56" key="DiffContextDialog" timestamp="1596106470803">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="122" y="56" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1596106470803" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1595963559335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1595963559335" />
-    <state width="1260" height="164" key="GridCell.Tab.0.bottom" timestamp="1595963669266">
+    <state width="618" height="129" key="GridCell.Tab.0.bottom" timestamp="1596117209568">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1595963669266" />
-    <state width="1260" height="164" key="GridCell.Tab.0.center" timestamp="1595963669266">
+    <state width="618" height="129" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1596117209568" />
+    <state width="618" height="129" key="GridCell.Tab.0.center" timestamp="1596117209567">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1595963669266" />
-    <state width="1260" height="164" key="GridCell.Tab.0.left" timestamp="1595963669266">
+    <state width="618" height="129" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1596117209567" />
+    <state width="618" height="129" key="GridCell.Tab.0.left" timestamp="1596117209567">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1595963669266" />
-    <state width="1260" height="164" key="GridCell.Tab.0.right" timestamp="1595963669266">
+    <state width="618" height="129" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1596117209567" />
+    <state width="618" height="129" key="GridCell.Tab.0.right" timestamp="1596117209568">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1595963669266" />
+    <state width="618" height="129" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1596117209568" />
     <state x="140" y="57" key="MergeDialog" timestamp="1596047759065">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
