@@ -49,8 +49,10 @@ class Paintings extends React.Component {
         }
         return (
             <div className="Card">
-				<h4 className="title text">{paint.title}</h4>
-				<img className="card-img-top" src={paint.img} alt=""/>
+				<div className="top">
+					<h4>{paint.title}</h4>
+					<img className="card-img-top" src={paint.img} alt=""/>
+				</div>
 				<div className="text-below-image">
 					<p className="text"><b>Artist:</b> {paint.artist}</p>
 					<p className="text"><b>Description:</b> {sub_description}</p>
