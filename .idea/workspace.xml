@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce2e612d-7c32-4ed7-8ad7-10e6bfe6c69f" name="Default Changelist" comment="add files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practical-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practical-react/src/paintings/Paintings.js" beforeDir="false" afterPath="$PROJECT_DIR$/practical-react/src/paintings/Paintings.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="search-by-category-v1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

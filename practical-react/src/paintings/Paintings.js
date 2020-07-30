@@ -43,8 +43,8 @@ class Paintings extends React.Component {
     List() {
         if (this.props.data) {
             return (
-                this.props.data.map((paint) => (
-                        <div style={{display: "inline-block"}}>
+                this.props.data.map((paint, i) => (
+                        <div key = {i} style={{display: "inline-block"}}>
                             {this.Card(paint)}
                         </div>
                     )
