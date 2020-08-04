@@ -1,12 +1,16 @@
 import React from "react";
 import './Paintings.scss';
 import '.././painting-extra-details/Painting-extra-details.js'
-import PaintingExtraDetails from "../painting-extra-details/Painting-extra-details";
+// import PaintingExtraDetails from "../painting-extra-details/Painting-extra-details";
 import {string} from "prop-types";
+import { Link } from "react-router-dom";
+import {db} from '../service/firebase'; 
 
 class Paintings extends React.Component {
 
-    state = {
+    constructor(){
+        super();
+        this.state = {
         flag: false,
         extra_details_paint: {
             artist: string,
@@ -17,21 +21,44 @@ class Paintings extends React.Component {
             title: string,
         }
     };
+}
+    componentDidMount() {
+        db.collection('paintings')
+            .get()
+            .then(snapshot => {
+                const paintingsList = [];
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    // console.log(data);
+                    if (data)
+                        paintingsList.push(data)
+                });
+                this.setState({paintings: paintingsList});
+                console.log(this.state.paintings);
+                // window.location.reload();
+                // this.render();
+                // console.log(paintings);
+            }).catch(err => console.log("error => " + err))
+    }
+
+
 
     render() {
         return (
-          this.state.flag === true ? <PaintingExtraDetails data={this.state.extra_details_paint}/> : this.List()
+            this.List()
+          //this.state.flag === true ? <PaintingExtraDetails data={this.state.extra_details_paint}/> : this.List()
         );
     }
 
     List() {
-        if (this.props.data) {
+        // console.log("================");
+        if (this.state.paintings) {
             // if(des.length > 20)
             //     this.prop.data.description = des.substr(0,20) + '...';
-            // console.log(this.props.data);
+             console.log("================");
             return (
 				<div className="gallery">
-					{this.props.data.map((paint) => (
+					{this.state.paintings.map((paint) => (
                         this.Card(paint)
                     )
                 )}
@@ -43,6 +70,7 @@ class Paintings extends React.Component {
     }
 
     Card(paint) {
+
         let sub_description = paint.description;
         if (sub_description.length > 45) {
             sub_description = sub_description.substr(0, 45) + '...';
@@ -59,10 +87,11 @@ class Paintings extends React.Component {
 					<br/>
 				</div>
 
-				<button className="btn btn-info"
-						onClick={() => this.setState({flag: true, extra_details_paint: paint})}
-				>Details
-				</button>
+                <Link to={{
+                    pathname:`/PaintingExtraDetails/${paint.title}`,
+                    state: paint }}>
+                    <button className="btn btn-info">Details</button>
+                </Link>
             </div>
         );
     }
