@@ -13,34 +13,15 @@ import PaintingExtraDetails from './painting-extra-details/Painting-extra-detail
 
 class App extends React.Component {
     state = {
-        paintings:null
+        paintings:null,
     };
 
-    // componentDidMount() {
-    //     db.collection('paintings')
-    //         .get()
-    //         .then(snapshot => {
-    //             const paintingsList = [];
-    //             snapshot.forEach(doc => {
-    //                 const data = doc.data();
-    //                 // console.log(data);
-    //                 if (data)
-    //                     paintingsList.push(data)
-    //             });
-    //             this.setState({paintings: paintingsList});
-    //             console.log(this.state.paintings);
-    //             // window.location.reload();
-    //             // this.render();
-    //             // console.log(paintings);
-    //         }).catch(err => console.log("error => " + err))
-    // }
 
     render() {
         // console.log( "renderr => "+this.state.paintings)
         return (
             <Router>
             <div className="App">
-
 
                 <Switch>
         <Route path="/" exact component={Paintings} />

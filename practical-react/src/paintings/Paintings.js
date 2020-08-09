@@ -4,7 +4,8 @@ import '.././painting-extra-details/Painting-extra-details.js'
 // import PaintingExtraDetails from "../painting-extra-details/Painting-extra-details";
 import {string} from "prop-types";
 import { Link } from "react-router-dom";
-import {db} from '../service/firebase'; 
+import {db} from '../service/firebase';
+import Dropdown from "react-bootstrap/Dropdown";
 
 class Paintings extends React.Component {
 
@@ -12,6 +13,8 @@ class Paintings extends React.Component {
         super();
         this.state = {
         flag: false,
+            sorted:"title", //artist,category,price,title
+            direction:"asc",//desc ,asc
         extra_details_paint: {
             artist: string,
             category: string,
@@ -21,24 +24,56 @@ class Paintings extends React.Component {
             title: string,
         }
     };
+        this.sortBy.bind(this);
+        this.sortDirection.bind(this);
+
 }
-    componentDidMount() {
-        db.collection('paintings')
+    sortDirection(event) {
+        this.setState({direction: event});
+        this.componentDidMount()
+
+    }
+
+    sortBy(event) {
+        this.setState({sorted:event});
+        this.componentDidMount()
+
+    }
+
+    async componentDidUpdate(prevProps) {
+        const collection = await db.collection('paintings')
+            .orderBy(this.state.sorted, this.state.direction)
             .get()
-            .then(snapshot => {
-                const paintingsList = [];
-                snapshot.forEach(doc => {
-                    const data = doc.data();
-                    // console.log(data);
-                    if (data)
-                        paintingsList.push(data)
-                });
+        const paintingsList = [];
+        collection.forEach(doc => {
+            const data = doc.data();
+            if (data)
+                paintingsList.push(data)
+        });
+        let i;
+        for (i=0;i<paintingsList.length;i++)
+        {
+            if(paintingsList[i].title!=this.state.paintings[i].title)
+            {
                 this.setState({paintings: paintingsList});
-                console.log(this.state.paintings);
-                // window.location.reload();
-                // this.render();
-                // console.log(paintings);
-            }).catch(err => console.log("error => " + err))
+                return
+            }
+        }
+
+
+
+    }
+        async componentDidMount() {
+            const collection = await db.collection('paintings')
+                .orderBy(this.state.sorted, this.state.direction)
+                .get()
+            const paintingsList = [];
+            collection.forEach(doc => {
+                const data = doc.data();
+                if (data)
+                    paintingsList.push(data)
+            });
+            this.setState({paintings: paintingsList});
     }
 
 
@@ -51,13 +86,37 @@ class Paintings extends React.Component {
     }
 
     List() {
-        // console.log("================");
         if (this.state.paintings) {
-            // if(des.length > 20)
-            //     this.prop.data.description = des.substr(0,20) + '...';
-             console.log("================");
             return (
 				<div className="gallery">
+                    <Dropdown>
+                        <form>
+                            <label>
+                                select sort by :
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">{this.state.sorted}</Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item onClick={() => this.sortBy("artist")}>artist</Dropdown.Item>
+                                    <Dropdown.Item onClick={() => this.sortBy("category")}>category</Dropdown.Item>
+                                    <Dropdown.Item onClick={() => this.sortBy("price")}>price</Dropdown.Item>
+                                    <Dropdown.Item onClick={() => this.sortBy("title")}>title</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </label>
+                        </form>
+                    </Dropdown>
+
+                    <Dropdown >
+                        <form>
+                            <label>
+                                select sort direction by :
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">{this.state.direction}</Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item onClick={() => this.sortDirection("asc")}>ascending</Dropdown.Item>
+                            <Dropdown.Item onClick={() => this.sortDirection("desc")}>descending</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </label>
+                </form>
+                    </Dropdown>
+
 					{this.state.paintings.map((paint) => (
                         this.Card(paint)
                     )
