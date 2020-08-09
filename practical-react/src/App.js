@@ -41,7 +41,7 @@ class App extends React.Component {
             <Router>
             <div className="App">
 
-                <Header/>
+
                 <Switch>
         <Route path="/" exact component={Paintings} />
         <Route path='/PaintingExtraDetails/:name' component={PaintingExtraDetails} />
