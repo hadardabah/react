@@ -91,8 +91,7 @@ class Paintings extends React.Component {
 				<div className="gallery">
                     <Dropdown>
                         <form>
-                            <label>Sort by:</label>
-                                <Dropdown.Toggle variant="success" id="dropdown-basic">{this.state.sorted}</Dropdown.Toggle>
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">Sort by: {this.state.sorted}</Dropdown.Toggle>
                                 <Dropdown.Menu>
                                     <Dropdown.Item onClick={() => this.sortBy("artist")}>artist</Dropdown.Item>
                                     <Dropdown.Item onClick={() => this.sortBy("category")}>category</Dropdown.Item>
@@ -104,8 +103,7 @@ class Paintings extends React.Component {
                     
                     <Dropdown>
                         <form>
-                            <label>Direction:</label>
-                                <Dropdown.Toggle variant="success" id="dropdown-basic">{this.state.direction}</Dropdown.Toggle>
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">Direction: {this.state.direction}</Dropdown.Toggle>
                                 <Dropdown.Menu>
                                     <Dropdown.Item onClick={() => this.sortDirection("asc")}>ascending</Dropdown.Item>
                                     <Dropdown.Item onClick={() => this.sortDirection("desc")}>descending</Dropdown.Item>
@@ -134,8 +132,8 @@ class Paintings extends React.Component {
         return (
             <div className="Card">
 				<div className="top">
-					<h4>{paint.title}</h4>
 					<img className="card-img-top" src={paint.img} alt=""/>
+                    <h4>{paint.title}</h4>
 				</div>
 				<div className="text-below-image">
 					<p className="text"><b>Artist:</b> {paint.artist}</p>
@@ -146,7 +144,7 @@ class Paintings extends React.Component {
                 <Link to={{
                     pathname:`/PaintingExtraDetails/${paint.title}`,
                     state: paint }}>
-                    <button className="btn btn-info">Details</button>
+                    <button className="btn btn-info">More Details</button>
                 </Link>
             </div>
         );
