@@ -21,6 +21,8 @@ class PaintingExtraDetails extends React.Component {
 					<p>{this.props.location.state.artist}</p>
 					<h5>Description:</h5>
 					<p>{this.props.location.state.description}</p>
+					<h5>Price:</h5>
+					<p>{this.props.location.state.price}</p>
 					<br/>
 					<button className="btn btn-info">Buy Now</button>
 				</div>

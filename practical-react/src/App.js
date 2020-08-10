@@ -7,8 +7,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import PaintingExtraDetails from './painting-extra-details/Painting-extra-details'
-
+import PaintingExtraDetails from './painting-extra-details/Painting-extra-details';
 
 
 class App extends React.Component {
@@ -22,15 +21,14 @@ class App extends React.Component {
         return (
             <Router>
             <div className="App">
-
+            <Header/>
                 <Switch>
-        <Route path="/" exact component={Paintings} />
-        <Route path='/PaintingExtraDetails/:name' component={PaintingExtraDetails} />
-        </Switch>
+                    <Route path="/" exact component={Paintings} />
+                    <Route path='/PaintingExtraDetails/:name' component={PaintingExtraDetails} />
+                </Switch>
                 {/* <Paintings data={this.state.paintings}/> */}
-                <Footer/>
+            <Footer/>
             </div>
-        
         </Router>
         )
     }
@@ -38,13 +36,13 @@ class App extends React.Component {
 
 function Header() {
     return (
-        <header><h1>Paintings</h1></header>
+        <header><h1>Paintings Gallery</h1></header>
     );
 }
 
 function Footer() {
     return (
-        <footer>We Are The Best</footer>
+        <footer>© All Rights Reserved</footer>
     );
 }
 

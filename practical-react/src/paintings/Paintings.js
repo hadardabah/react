@@ -15,7 +15,7 @@ class Paintings extends React.Component {
         flag: false,
             sorted:"title", //artist,category,price,title
             direction:"asc",//desc ,asc
-        extra_details_paint: {
+            extra_details_paint: {
             artist: string,
             category: string,
             description: string,
@@ -91,8 +91,7 @@ class Paintings extends React.Component {
 				<div className="gallery">
                     <Dropdown>
                         <form>
-                            <label>
-                                select sort by :
+                            <label>Sort by:</label>
                                 <Dropdown.Toggle variant="success" id="dropdown-basic">{this.state.sorted}</Dropdown.Toggle>
                                 <Dropdown.Menu>
                                     <Dropdown.Item onClick={() => this.sortBy("artist")}>artist</Dropdown.Item>
@@ -100,23 +99,21 @@ class Paintings extends React.Component {
                                     <Dropdown.Item onClick={() => this.sortBy("price")}>price</Dropdown.Item>
                                     <Dropdown.Item onClick={() => this.sortBy("title")}>title</Dropdown.Item>
                                 </Dropdown.Menu>
-                            </label>
                         </form>
                     </Dropdown>
-
-                    <Dropdown >
+                    
+                    <Dropdown>
                         <form>
-                            <label>
-                                select sort direction by :
+                            <label>Direction:</label>
                                 <Dropdown.Toggle variant="success" id="dropdown-basic">{this.state.direction}</Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            <Dropdown.Item onClick={() => this.sortDirection("asc")}>ascending</Dropdown.Item>
-                            <Dropdown.Item onClick={() => this.sortDirection("desc")}>descending</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </label>
-                </form>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item onClick={() => this.sortDirection("asc")}>ascending</Dropdown.Item>
+                                    <Dropdown.Item onClick={() => this.sortDirection("desc")}>descending</Dropdown.Item>
+                                </Dropdown.Menu>
+                        </form>
                     </Dropdown>
-
+                    <br></br>
+                    <br></br>
 					{this.state.paintings.map((paint) => (
                         this.Card(paint)
                     )
