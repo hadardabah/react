@@ -8,14 +8,14 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "firebase": "latest",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "prop-types": "latest",
     "react": "^16.13.1",
     "react-bootstrap": "latest",
     "react-dom": "^16.13.1",
     "react-dropdown": "^1.7.0",
     "react-dropdown-button": "^1.0.11",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "deploy": "npm run build && firebase deploy",
